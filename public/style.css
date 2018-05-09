@@ -1,0 +1,362 @@
+body {
+    text-align: center;
+    font-size: 14px;
+    font-style: 'Roboto', sans-serif;
+    top: 0;
+    margin: 0;
+}
+
+main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: coral;
+    /* border: 1px dotted black; */
+}
+
+nav {
+    width: 100vw;
+    position: fixed;
+    z-index: 99999999999;
+}
+
+input {
+    text-align: center;
+    padding: 3px;
+    letter-spacing: 3px;
+    border: 1px dotted coral;
+    color: lightsteelblue;
+}
+
+a {
+    color: lightsteelblue;
+}
+
+img {
+    border-radius: 9px;
+}
+
+a img:hover {
+    opacity: 0.7;
+}
+
+
+/* @WELCOME components */
+
+#register-container, #login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 3px dotted pink;
+}
+
+.submitbtn {
+    margin: 13px;
+    background-color: pink;
+    border-radius: 33px;
+    color: white;
+}
+
+.frbtn {
+    margin: 13px;
+    background-color: lightsteelblue;
+    border-radius: 33px;
+    color: white;
+}
+
+.errmsg {
+    margin: 13px;
+    color: pink;
+    background-color: lightyellow;
+    -webkit-animation: rainbow 3s infinite;
+    -ms-animation: rainbow 3s infinite;
+    animation: rainbow 3s infinite;
+}
+
+/* @APP components */
+
+/* NAV */
+#change-profile-pic {
+    position: fixed;
+    top: 83px;
+    position: relative;
+    right: 11px;
+    z-index: 2874;
+}
+
+#qtest {
+    position:relative;
+    top: 30px;
+    right: 203px;
+    z-index: 2874;
+}
+
+#logo {
+    display: flex;
+    float: left;
+    flex-direction: row;
+    position: fixed;
+}
+
+#logo img {
+    left: 0px;
+    top: -33px;
+    height: 133px;
+    position: fixed;
+    cursor: cell;
+}
+
+#logo-logout {
+    top: 82px;
+    position: relative;
+    z-index: 287287;
+    left: 33px;
+    color: lightsteelblue;
+    background-color: white;
+}
+
+.division {
+    top: 0;
+    width: 100vw;
+    height: 103px;
+    border-bottom: 3px dotted pink;
+    background-color: white;
+    z-index: 1003;
+}
+
+
+/* CONTENT */
+
+.content, #routes {
+    display: grid;
+    grid-column: 1fr 1fr;
+    top: 123px;
+    width: 100vw;
+    min-height: 287px;
+    margin: 7px;
+}
+
+/* .content {
+    background-image: url('./paws3.jpg');
+    background-size: auto;
+} */
+
+.content2 {
+    width: 100%;
+    background-color: pink;
+    color: white;
+    font-size: 16px;
+    padding: 3px;
+}
+
+#profile, #otherprofile {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    left: 0;
+    top: 103px;
+    width: 48%;
+    height: 303px;
+    border: 3px dotted thistle;
+    background-color: lightyellow;
+}
+
+.username-in-profile {
+    margin: 33px;
+    font-size: 15px;
+}
+
+.profilepic-in-profile img {
+    position: relative;
+    grid-area: avatar;
+    top: 0px;
+    height: 303px;
+    width: auto;
+}
+
+#profile-pic {
+    display: flex;
+    float: right;
+    flex-direction: row;
+    top: 0px;
+    right: 0px;
+    position: fixed;
+}
+
+#profile-pic img {
+    right: 33px;
+    position: absolute;
+    height: 103px;
+    cursor: cell;
+    background-color: white;
+    z-index: 1001;
+}
+
+#profile-pic-upload {
+    top: 103px;
+    position: relative;
+}
+
+#editbio {
+    margin-top: 3px;
+    color: lightsteelblue;
+    text-decoration: underline;
+    cursor: cell;
+    font-size: 10px;
+}
+
+.bio {
+    margin: 33px;
+    background-color: white;
+}
+
+/* FRIENDS LIST */
+
+.friends-list {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    top: 0%;
+    left: 50%;
+    width: 48%;
+    /* height: auto; */
+    height: 303px;
+    border: 3px dotted lightsteelblue;
+}
+
+.friends, .wannabes {
+    background-color: white;
+    overflow: scroll;
+}
+
+.friend img, .wannabe img, .online-users img {
+    max-width: 99px;
+    max-height: 99px;
+}
+
+.online {
+    margin: 3px 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.online-users {
+    margin: 3px;
+}
+
+/* CHAT */
+
+.chat {
+    right: 0px;
+    width: auto;
+    bottom: 0px;
+    position: fixed;
+}
+
+.chat-btn {
+    border: 1px solid pink;
+    width: 233px;
+}
+
+#chatbox {
+    height: 233px;
+    width: 233px;
+    background-color: lightyellow;
+    border: 3px dotted pink;
+    overflow: scroll;
+}
+
+#chatbox img{
+    height: 33px;
+}
+
+#chat-modal {
+    right: 0px;
+}
+
+#chat-input {
+    width: 233px;
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: row;
+    margin: 7px;
+    max-width: 233px;
+}
+
+.chat-user {
+    margin-right: 3px;
+}
+
+/* @group Blink */
+.blink {
+	-webkit-animation: blink .75s linear infinite;
+	-moz-animation: blink .75s linear infinite;
+	-ms-animation: blink .75s linear infinite;
+	-o-animation: blink .75s linear infinite;
+	 animation: blink .75s linear infinite;
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+/* @end */
+
+/* @rainbow */
+
+@-webkit-keyframes rainbow{
+    20%{color: coral;}
+	40%{color: antiquewhite;}
+	60%{color: #C5EAD2;}
+	80%{color: #a8bfe3;}
+	100%{color: plum;}
+}
+
+@-ms-keyframes rainbow{
+    20%{color: palevioletred;}
+	40%{color: antiquewhite;}
+	60%{color: #C5EAD2;}
+	80%{color: #a8bfe3;}
+	100%{color: plum;}
+}
+
+@keyframes rainbow{
+    20%{color: palevioletred;}
+	40%{color: antiquewhite;}
+	60%{color: #C5EAD2;}
+	80%{color: #a8bfe3;}
+	100%{color: plum;}
+}
+/* @end */
