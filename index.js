@@ -11,7 +11,7 @@ const {register, getMatchesByEmail, getInfo, insertImage, editBio, acceptFR, can
 
 //socket.io
 const server = require('http').Server(app);
-const io = require('socket.io')(server, { origins: 'localhost:8080 192.168.50.83:*' });
+const io = require('socket.io')(server, { origins: 'localhost:8080 192.168.50.83:* kitty-net.herokuapp.com:*' });
 
 //upload files stuff:
 const multer = require('multer');
@@ -452,6 +452,6 @@ io.on('connection', function(socket) {
 
 
 //LISTENING:
-server.listen(8080, function() {
+server.listen(process.env.PORT || 8080, function() {
     console.log("I'm listening.");
 });
